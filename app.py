@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, jsonify
+from flask import Flask, render_template, request, jsonify
 import sqlite3
 
 app = Flask(__name__)
@@ -29,8 +29,10 @@ def init_db():
         db.executemany(
             'INSERT INTO books (title, author, year, cover_url) VALUES (?, ?, ?, ?)',
             [
-                ('The Hobbit', 'J.R.R. Tolkien', 1937, 'https://covers.openlibrary.org/b/id/6979865-M.jpg'),
-                ('Dune', 'Frank Herbert', 1965, 'https://covers.openlibrary.org/b/id/8264441-M.jpg')
+                ('The Hobbit', 'J.R.R. Tolkien', 1937, 'https://cdn.kobo.com/book-images/cf32789f-22db-4ad0-bba4-9c0bf69fb872/353/569/90/False/the-hobbit.jpg'),
+                ('Dune', 'Frank Herbert', 1965, 'https://covers.shakespeareandcompany.com/97814732/9781473233959.jpg'),
+                ('Pse?!', 'Sterio Spasse', 1935,'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1335635198i/13516255.jpg')
+               
             ]
         )
 
