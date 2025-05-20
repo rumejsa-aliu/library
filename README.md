@@ -6,4 +6,4 @@
 2. open the terminal and write the command "python app.py" in the terminal.
 3. Click the link it provides, usually something like: http://127.0.0.1:5000  
 
-![Website Sreenshot](media/websi)
+![Website Sreenshot](media/website.png)
